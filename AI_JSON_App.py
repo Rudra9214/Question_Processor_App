@@ -9,9 +9,6 @@ from langchain_core.prompts import ChatPromptTemplate
 # Load environment variables
 load_dotenv()
 
-# Initialize the language model
-llm = ChatOpenAI(model="gpt-4o")
-
 # Define the TypedDict for the new JSON format
 class Step(TypedDict):
     """Defines a step in a test case."""
